@@ -1,0 +1,13 @@
+create database MuraliDB;
+use MuraliDB;
+create table stud(ID int auto_increment primary key,Name varchar(40),Age int);
+insert into stud(Name,Age)value("Murali",21),("Shadow",99),("Baka",90);
+alter table stud add column Mark int;
+alter table stud change Mark studMark int;
+truncate stud;
+update stud set studMark=15 where ID=3;
+select * from stud where ID in (1,2);
+delete  from stud where ID=1;
+select * from stud;
+rename table student to stud;
+drop table stud;

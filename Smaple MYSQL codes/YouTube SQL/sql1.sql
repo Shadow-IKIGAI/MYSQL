@@ -1,0 +1,11 @@
+create database youtube;
+use youtube;
+create table fruit(name varchar(30),price int);
+insert into fruit values("Apple",100),("Bannana",30),("Orange",60);
+select * from fruit;
+update fruit set price=150 where name="Apple";
+update fruit set name="Mango" where name="Orange";
+delete from fruit where name="Apple";
+alter table fruit change name Name varchar(30);
+delete from fruit where Name in ("Bannana","Mango");
+drop table fruit;
